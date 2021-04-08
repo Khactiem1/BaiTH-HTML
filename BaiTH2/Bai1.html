@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+        .main{
+            width: 940px;
+            display: block;
+            margin: 0 auto;
+        }
+        .text__bold{
+            font-weight: bold;
+        }
+        header,footer{
+            margin-top: 20px;
+            height: 100px;
+            position: relative;
+        }
+        .text__bold{
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translateX(-50%);
+        }
+        .border{
+            border: solid 1px #000;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .info__content{
+            flex: 1;
+        }
+        .info__link{
+            width: 20%;
+            margin-left: 20px;
+        }
+        .text__medium{
+            font-weight: 500;
+        }
+        .info__content{
+            padding: 15px;
+        }
+        .info__title{
+            color: red;
+            margin-bottom: 20px;
+        }
+        .info__content-item{
+            display: flex;
+        }
+        .content__img{
+            width: 150px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+        .info__content-item + .info__content-item{
+            margin-top: 30px;
+        }
+        .content-item__list{
+            margin-left: 50px;
+        }
+        .link__title{
+            width: 100%;
+            height: 40px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: solid 1px #000;
+            background-color: blueviolet;
+        }
+        .lienket__content-item + .lienket__content-item{
+            margin-top: 5px;
+        }
+        .lienket__content{
+            margin:20px 0 0 30px;
+        }
+        .lienket{
+            height: 50%;
+        }
+        .quangcao__img.border{
+            border: solid 1px #ccc;
+        }
+        .lienket__content-img{
+            padding: 5px;
+        }
+        .quangcao__img{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        .quangcao__img + .quangcao__img{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header class="border">
+            <div class="text__bold">
+                <span>
+                    Ảnh banner
+                </span>
+            </div>
+        </header>
+        <section class="info">
+            <div class="container">
+                <div class="info__content border">
+                    <h3 class="info__title">
+                        DANH MỤC SẢN PHẨM
+                    </h3>
+                    <div class="info__content">
+                        <div class="info__content-item">
+                            <div class="content__img">
+                            </div>
+                            <ul class="content-item__list">
+                                <li class="item__list-item">
+                                    Tên sản phẩm: Tên sản phẩm
+                                </li>
+                                <li class="item__list-item">
+                                    Mã sản phẩm: Mã sản phẩm
+                                </li>
+                                <li class="item__list-item">
+                                    Giá bán: Giá bán
+                                </li>
+                                <li class="item__list-item">
+                                    Mô tả: Mô tả về sản phẩm
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__content-item">
+                            <div class="content__img">
+                            </div>
+                            <ul class="content-item__list">
+                                <li class="item__list-item">
+                                    Tên sản phẩm: Tên sản phẩm
+                                </li>
+                                <li class="item__list-item">
+                                    Mã sản phẩm: Mã sản phẩm
+                                </li>
+                                <li class="item__list-item">
+                                    Giá bán: Giá bán
+                                </li>
+                                <li class="item__list-item">
+                                    Mô tả: Mô tả về sản phẩm
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__content-item">
+                            <div class="content__img">
+                            </div>
+                            <ul class="content-item__list">
+                                <li class="item__list-item">
+                                    Tên sản phẩm: Tên sản phẩm
+                                </li>
+                                <li class="item__list-item">
+                                    Mã sản phẩm: Mã sản phẩm
+                                </li>
+                                <li class="item__list-item">
+                                    Giá bán: Giá bán
+                                </li>
+                                <li class="item__list-item">
+                                    Mô tả: Mô tả về sản phẩm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__link border">
+                    <div class="lienket">
+                        <h3 class="link__title">
+                            LIÊN KẾT
+                        </h3>
+                        <ul class="lienket__content">
+                            <li class="lienket__content-item"><a href="#">Liên kết số 1</a></li>
+                            <li class="lienket__content-item"><a href="#">Liên kết số 1</a></li>
+                            <li class="lienket__content-item"><a href="#">Liên kết số 1</a></li>
+                            <li class="lienket__content-item"><a href="#">Liên kết số 1</a></li>
+                            <li class="lienket__content-item"><a href="#">Liên kết số 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="quangcao">
+                        <h3 class="link__title">
+                            QUẢNG CÁO 
+                        </h3>
+                        <div class="lienket__content-img">
+                            <div class="quangcao__img border">Ảnh quản cáo 1</div>
+                            <div class="quangcao__img border">Ảnh quản cáo 2</div>
+                            <div class="quangcao__img border">Ảnh quản cáo 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="border">
+            <div class="text__bold">
+                <span class="text__medium">
+                    Bản quyền thuộc về
+                </span>
+                Tên học viện
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        width: 960px;
+        margin: 0 auto;
+    }
+    header{
+        width: 100%;
+        height: 248px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 255, 255, 0.767);
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        height: 350px;
+    }
+    .container__left,.container__right{
+        width: 160px;
+    }
+    .container__left{
+        background-color: rgba(127, 255, 212, 0.459);
+    }
+    .container__right{
+        background-color: rgba(137, 43, 226, 0.397);
+    }
+    .container__between{
+        flex: 1;
+    }
+    .container__between-body{
+        display: flex;
+    }
+    .container__between-title{
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 15px;
+    }
+    .img{
+        width: 120px;
+        height: 170px;
+        background-color: rgba(0, 0, 0, 0.404);
+        margin-left: 15px;
+    }
+    .container__between-body ul{
+        list-style: none;
+    }
+    .container__between-body ul li{
+        margin-top: 5px;
+    }
+    .container__between-footer{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    h3{
+        margin-bottom: 20px;
+    }
+    ul li{
+        margin-left: 35px;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: antiquewhite;
+    }
+    footer h5{
+        padding-top: 20px;
+        text-align: center;
+        line-height: 18px;
+    }
+</style>
+<body>
+    <div class="main">
+        <header>
+            <h1>Đây là Header</h1>
+        </header>
+        <section class="container">
+            <div class="container__left">
+                <ul>
+                    <h3>TRANG CHỦ</h3>
+                    <li>Lưu bút</li>
+                    <li>Nghe nhạc</li>
+                    <li>Xem phim</li>
+                    <li>Đọc chuyện</li>
+                </ul>
+                <ul>
+                    <h3>TÌNH YÊU</h3>
+                    <li>Thơ tình</li>
+                    <li>Truyện tình</li>
+                    <li>Vườn tình yêu</li>
+                </ul>
+            </div>
+            <div class="container__between">
+                <h2 class="container__between-title">
+                    THÔNG TIN CÁ NHÂN
+                </h2>
+                <div class="container__between-body">
+                    <div class="img"></div>
+                    <ul class="container__between-text">
+                        <li class="between-text__item">
+                            Họ và tên:
+                        </li>
+                        <li class="between-text__item">
+                            Giới tính:
+                        </li>
+                        <li class="between-text__item">
+                            Ngày sinh:
+                        </li>
+                        <li class="between-text__item">
+                            Quê quán:
+                        </li>
+                        <li class="between-text__item">
+                            Email:
+                        </li>
+                        <li class="between-text__item">
+                            Điện thoại:
+                        </li>
+                        <li class="between-text__item">
+                            Website:
+                        </li>
+                    </ul>
+                    <ul class="container__between-text">
+                        <li class="between-text__item">
+                            Nguyễn Văn Quyết
+                        </li>
+                        <li class="between-text__item">
+                            Nam
+                        </li>
+                        <li class="between-text__item">
+                            01/01/1900
+                        </li>
+                        <li class="between-text__item">
+                            Mê Linh-Hà Nội
+                        </li>
+                        <li class="between-text__item">
+                            nguyenkhactiem@gmail.com
+                        </li>
+                        <li class="between-text__item">
+                            0123456789
+                        </li>
+                        <li class="between-text__item">
+                            <a href="#">http://congnghephanmem.vn</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container__between-footer">
+                    <ul class="container__footer-item">
+                        <h3>Sở thich:</h3>
+                        <li class="container__footer-text">Nghe nhạc</li>
+                        <li class="container__footer-text">Xem phim hài</li>
+                        <li class="container__footer-text">Du lịch</li>
+                    </ul>
+                    <ul class="container__footer-item">
+                        <h3>Sở thich:</h3>
+                        <li class="container__footer-text">Nghe nhạc</li>
+                        <li class="container__footer-text">Xem phim hài</li>
+                        <li class="container__footer-text">Du lịch</li>
+                    </ul>
+                    <ul class="container__footer-item">
+                        <h3>Sở thich:</h3>
+                        <li class="container__footer-text">Nghe nhạc</li>
+                        <li class="container__footer-text">Xem phim hài</li>
+                        <li class="container__footer-text">Du lịch</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container__right">
+                <ul>
+                    <h3>HOẠT ĐỘNG</h3>
+                    <li>Lưu bút</li>
+                    <li>Nghe nhạc</li>
+                    <li>Xem phim</li>
+                    <li>Đọc chuyện</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <h5>Bản quyền thuộc về Nguyễn Văn Quyết <br> E-mail: nguyenkhactiem@gmail.com Phone: 0123456789 </h5>
+        </footer>
+    </div>
+</body>
+</html>

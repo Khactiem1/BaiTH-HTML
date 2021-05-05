@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
     const btn__size = document.querySelectorAll('.size .select__item-content');
+    const span = document.querySelectorAll('.select__title span');
     btn__size.forEach((btn,index) => {
         btn.onclick = function(){
             if(this.classList.contains('select__item-active')){
@@ -8,6 +9,8 @@ document.addEventListener("DOMContentLoaded",function(){
             const btn__close = document.querySelector('.size .select__item-content.select__item-active');
             btn__close.classList.remove('select__item-active');
             this.classList.add('select__item-active');
+            const test = this.querySelector('span');
+            span[1].innerText = test.innerText;
         }
     })
     const btn__font = document.querySelectorAll('.font .select__item-content');
@@ -23,6 +26,8 @@ document.addEventListener("DOMContentLoaded",function(){
             btn__close.classList.remove('select__item-active');
             img[index].classList.add('slide__item-active');
             this.classList.add('select__item-active');
+            const test = this.querySelector('span');
+            span[0].innerText = test.innerText;
         }
     })
     const item = document.querySelectorAll('.show__img-item');
@@ -34,6 +39,8 @@ document.addEventListener("DOMContentLoaded",function(){
             const img__close = document.querySelector('.slide__item.slide__item-active');
             img__close.classList.remove('slide__item-active');
             img[index].classList.add('slide__item-active');
+            const test = document.querySelector('.font .select__item-content.select__item-active span');
+            span[0].innerText = test.innerText;
         }
     })
     const btn__number = document.querySelectorAll('.btn__number');

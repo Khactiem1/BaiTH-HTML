@@ -73,7 +73,6 @@
 }
 .select__item{
     display: flex;
-    margin-top: 20px;
 }
 .select__item-content{
     border: solid 1px cornflowerblue;

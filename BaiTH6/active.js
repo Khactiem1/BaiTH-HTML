@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded",function(){
         }
     })
     const btn__number = document.querySelectorAll('.btn__number');
-    console.log(btn__number);
     const input = document.querySelector('.btn__input');
     btn__number[0].onclick = function(){
         if(input.value == 0){

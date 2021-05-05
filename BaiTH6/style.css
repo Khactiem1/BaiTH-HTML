@@ -112,3 +112,27 @@
 .btn__input{
     width: 40px;
 }
+.title__form{
+    margin-top: 20px;
+}
+.form__content{
+    background-color: #ccc;
+    color: #1d1d1d;
+    width: 33.33333%;
+}
+.form{
+    display: flex;
+}
+.form__info{
+    flex: 1;
+}
+.form__item{
+    padding: 12px 24px;
+}
+.form__info{
+    background-color: rgb(226, 226, 226);
+}
+.info__content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
